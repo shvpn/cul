@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI Caculator</title>
+    
+    <!--cdn bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--cdn fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--cdn google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css.css">    
+
+</head>
+<body>
+    <div class="container mt-4"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">MINI Calculator</h3>
+                        <form class="bg" name="calculator">
+                            <div class="form-group">
+                                <input type="text" class="form-control p-5" name="display" id="display" readonly>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn-group btn-group-md d-flex" role="group">
+                                    <button type="button" class="btn btn-dark m-1" onclick="lub()">C</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="lub()">DEL</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('/')">/</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('*')">X</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn-group btn-group-md d-flex" role="group">
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('7')">7</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('8')">8</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('9')">9</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('-')">-</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn-group btn-group-md d-flex" role="group">
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('4')">4</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('5')">5</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('6')">6</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('+')">+</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn-group btn-group-md d-flex" role="group">
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('1')">1</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('2')">2</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('3')">3</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="show()">=</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="btn-group btn-group-md d-flex" role="group">
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('0')">0</button>
+                                    <button type="button" class="btn btn-dark m-1" onclick="add('.')">.</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--cdn popper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--cdn bootstrap js-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
