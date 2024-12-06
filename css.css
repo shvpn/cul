@@ -1,5 +1,5 @@
 html{
-    scroll-behavior: smooth;
+    
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -17,11 +17,23 @@ body{
     src: url('zin.ttf') format('truetype');
 }
 
-.form-control {
+.bleh {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
-    font-family: 'DSEG', monospace;
+    height: inherit;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #ececec;
+    font-family: 'kleb', monospace;
+}
+.bleh1 {
+    height: 15%;
+    width: 25%;
+    margin-left: 74%;
+    margin-bottom: 3%;
+    
+    background-color: #343232;
 }
 .card-title{
     font-family: 'kleb', sans-serif;
@@ -34,7 +46,23 @@ body{
 .bg{
     background: rgba(209, 209, 209, 0.288);
     border-radius: 5px;
+    border: 2px solid rgb(141, 140, 140);
     padding: 20px;
+}
+button{
+    font-family: 'kleb', monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: rgb(41, 41, 41, 0.8);
+    color: white;
+    border: none;
+
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: key_dance 1s infinite;
+    cursor: pointer;
+    transition: 0.1s;
 }
 @keyframes change {
     0% {
@@ -56,6 +84,23 @@ body{
     100% {
         background: rgb(58,75,180);
         background: linear-gradient(40deg, rgba(58,75,180,1) 0%, rgba(130,163,148,1) 30%, rgba(161,130,163,1) 64%, rgba(69,252,93,1) 100%);
+    }
+}
+@keyframes key_dance {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
     
 }

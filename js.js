@@ -1,4 +1,5 @@
 let output = document.getElementById('display');
+output.value = '0';
 
 function lub() {
     output.value = '';
@@ -9,8 +10,11 @@ function lunone() {
 }
 
 function add(value) {
+    if (output.value == '0') {
+        output.value = value;
+    } else {
     output.value += value;
-}
+}}
 
 function show() {
     try {
