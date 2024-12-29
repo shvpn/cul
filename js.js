@@ -46,6 +46,7 @@ function show() {
 }
 
 function showhistory() {
+    alert("Clicked");
     let history = document.getElementById('history');
     history.innerHTML = '';
     for (let i = 0; i < localStorage.length; i++) {
